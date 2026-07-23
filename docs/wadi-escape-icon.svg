@@ -1,0 +1,19 @@
+<svg viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <!-- ICON MARK -->
+  <g transform="translate(190,140)">
+    <!-- terracotta mountain -->
+    <path d="M0 270 L130 40 L260 270 Z" fill="#B5542B"/>
+    <!-- teal mountain -->
+    <path d="M170 270 L330 10 L490 270 Z" fill="#0F4C4C"/>
+    <!-- palm tree, centered in the valley notch -->
+    <g transform="translate(250,150)" stroke="#D9A441" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 120 L0 30"/>
+      <path d="M0 45 Q-38 22 -62 48"/>
+      <path d="M0 40 Q42 15 68 42"/>
+      <path d="M0 62 Q-30 50 -48 78"/>
+      <path d="M0 62 Q30 50 48 78"/>
+    </g>
+    <!-- base wave -->
+    <path d="M-25 272 Q245 330 515 272" fill="none" stroke="#0F4C4C" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>

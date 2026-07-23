@@ -1,0 +1,24 @@
+<svg viewBox="0 0 1200 1400" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="1400" rx="24" fill="#F6EFE3"/>
+
+  <!-- ICON MARK -->
+  <g transform="translate(350,140)">
+    <path d="M0 270 L130 40 L260 270 Z" fill="#B5542B"/>
+    <path d="M170 270 L330 10 L490 270 Z" fill="#0F4C4C"/>
+    <g transform="translate(250,150)" stroke="#D9A441" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 120 L0 30"/>
+      <path d="M0 45 Q-38 22 -62 48"/>
+      <path d="M0 40 Q42 15 68 42"/>
+      <path d="M0 62 Q-30 50 -48 78"/>
+      <path d="M0 62 Q30 50 48 78"/>
+    </g>
+    <path d="M-25 272 Q245 330 515 272" fill="none" stroke="#0F4C4C" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <!-- WORDMARK -->
+  <text x="600" y="590" text-anchor="middle" font-size="88" letter-spacing="12" fill="#0F4C4C" font-weight="bold">WADI ESCAPE</text>
+  <text x="600" y="650" text-anchor="middle" font-size="32" letter-spacing="10" fill="#B5542B" font-weight="600">OMAN</text>
+
+  <!-- BASELINE -->
+  <text x="600" y="740" text-anchor="middle" font-size="30" fill="#5c5346" font-style="italic">A blend of Oman nature</text>
+</svg>
