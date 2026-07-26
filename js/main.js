@@ -28,13 +28,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Pre-select package on the contact form when arriving via ?package=bronze|silver|gold|custom
+  // Pre-select package on the contact form when arriving via ?package=muscat-escape|coast-explorer|desert-mountains|ultimate-oman|custom
   var packageSelect = document.getElementById("package");
+  var params = new URLSearchParams(location.search);
   if (packageSelect) {
-    var params = new URLSearchParams(location.search);
     var wanted = params.get("package");
     if (wanted) {
       packageSelect.value = wanted.toLowerCase();
+    }
+  }
+
+  // Pre-fill "What are you most excited about?" when arriving via ?interest=<tag> (Activities "Build Your Own")
+  var excitedField = document.getElementById("excited");
+  if (excitedField) {
+    var interest = params.get("interest");
+    if (interest && !excitedField.value) {
+      excitedField.value = interest;
     }
   }
 });
