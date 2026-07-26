@@ -261,6 +261,23 @@ section { padding: 72px 0; }
 .ph-banner   { aspect-ratio: 21 / 9; }
 .ph-video    { aspect-ratio: 16 / 9; }
 
+/* Real photos dropped into the same aspect-ratio slots (no dashed border / stripes) */
+img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border: none;
+  background: none;
+  border-radius: var(--radius);
+}
+.hero-media img.hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ---------- Cards ---------- */
 .card-grid {
   display: grid;
