@@ -1,4 +1,4 @@
-// Wadi Escape — shared site behavior
+// Wadi Escape: shared site behavior
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".main-nav");

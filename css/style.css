@@ -1,5 +1,5 @@
 /* ============================================
-   Wadi Escape — base styles
+   Wadi Escape: base styles
    Brand: teal #0F4C4C · gold #D9A441 · terracotta #B5542B · cream #F6EFE3
    ============================================ */
 
@@ -270,7 +270,7 @@ img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video {
   background: none;
   border-radius: var(--radius);
 }
-.hero-media img.hero-photo {
+.hero-media .hero-photo {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -432,7 +432,7 @@ img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
-.gallery-grid .img-placeholder:nth-child(5n+1) { grid-column: span 2; grid-row: span 2; }
+.gallery-grid > *:nth-child(5n+1) { grid-column: span 2; grid-row: span 2; }
 
 /* ---------- Founders / About ---------- */
 .founder-grid {
@@ -652,7 +652,7 @@ img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video {
   .founder-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr; gap: 28px; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-grid .img-placeholder:nth-child(5n+1) { grid-column: span 1; grid-row: span 1; }
+  .gallery-grid > *:nth-child(5n+1) { grid-column: span 1; grid-row: span 1; }
   .form-grid { grid-template-columns: 1fr; }
   .form-field.full { grid-column: 1; }
 }
