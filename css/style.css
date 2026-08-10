@@ -60,6 +60,7 @@ a { color: inherit; text-decoration: none; }
 
 section { padding: 72px 0; }
 .section-tight { padding: 48px 0; }
+.pt-tight { padding-top: 24px; }
 
 .section-head {
   text-align: center;
@@ -705,5 +706,6 @@ img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video {
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .card-grid-4 { grid-template-columns: 1fr; }
   section { padding: 52px 0; }
+  .pt-tight { padding-top: 16px; }
   .hero-actions .btn { width: 100%; justify-content: center; }
 }
