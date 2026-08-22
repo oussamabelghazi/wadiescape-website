@@ -263,9 +263,11 @@ section { padding: 72px 0; }
 .ph-video    { aspect-ratio: 16 / 9; }
 
 /* Real photos dropped into the same aspect-ratio slots (no dashed border / stripes) */
-img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video {
+img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video,
+video.ph-wide, video.ph-square, video.ph-portrait, video.ph-banner, video.ph-video {
   display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border: none;
   background: none;
@@ -352,7 +354,12 @@ img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video {
 }
 
 .pkg-card h3 { margin-bottom: 0; }
+.pkg-hotel-label { display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--teal); margin-bottom: 4px; }
+.pkg-card.pkg-custom .pkg-hotel-label { color: var(--cream); }
+.pkg-hotel { font-size: 0.9rem; color: var(--ink-soft); margin: 0; }
+.pkg-card.pkg-custom .pkg-hotel { color: rgba(246,239,227,0.85); }
 .pkg-price { font-family: var(--font-head); font-size: 1.4rem; color: var(--terracotta); font-weight: 700; }
+.pkg-price-sub { font-family: var(--font-body); font-size: 0.75rem; font-weight: 400; color: var(--ink-soft); display: block; margin-top: 2px; }
 .pkg-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
 .pkg-list li { padding-left: 22px; position: relative; font-size: 0.95rem; color: var(--ink-soft); }
 .pkg-list li::before {
@@ -423,17 +430,24 @@ img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video {
 .why-item p { color: var(--ink-soft); font-size: 0.95rem; }
 
 /* ---------- Testimonials ---------- */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
 .testimonial-card {
   background: var(--white);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 32px;
-  max-width: 640px;
-  margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .testimonial-stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 12px; }
+.testimonial-card p { flex: 1; color: var(--ink-soft); }
 .testimonial-card cite { display: block; margin-top: 14px; font-style: normal; font-weight: 700; color: var(--teal); }
+.testimonial-card cite span { display: block; font-weight: 400; color: var(--ink-soft); font-size: 0.85rem; margin-top: 2px; }
 
 /* ---------- Bands ---------- */
 .band-teal { background: var(--teal); color: var(--cream); }
@@ -508,6 +522,22 @@ img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video {
   text-align: center;
 }
 .flight-note h3 { margin-bottom: 10px; }
+.flight-options {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.flight-option {
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 16px 28px;
+  min-width: 160px;
+}
+.flight-class { display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--terracotta); margin-bottom: 6px; }
+.flight-fare { display: block; font-family: var(--font-head); font-size: 1.3rem; font-weight: 700; color: var(--teal); }
+.flight-fare-sub { display: block; font-size: 0.78rem; color: var(--ink-soft); margin-top: 2px; }
 
 /* ---------- Build Your Own tags ---------- */
 .tag-row {
@@ -665,7 +695,8 @@ img.ph-wide, img.ph-square, img.ph-portrait, img.ph-banner, img.ph-video {
 @media (max-width: 900px) {
   .card-grid,
   .why-grid,
-  .values-grid { grid-template-columns: 1fr; }
+  .values-grid,
+  .testimonial-grid { grid-template-columns: 1fr; }
   .card-grid-4 { grid-template-columns: repeat(2, 1fr); }
   .activity-grid { grid-template-columns: 1fr; }
   .founder-grid { grid-template-columns: 1fr; }
