@@ -100,4 +100,34 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/how-many-days-in-oman"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/combien-de-jours-oman"/>
   </url>
+  <url>
+    <loc>https://wadiescape.com/wahiba-sands-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/wahiba-sands-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/guide-wahiba-sands"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/guide-wahiba-sands</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/wahiba-sands-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/guide-wahiba-sands"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/jabal-akhdar-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/jabal-akhdar-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/guide-jabal-akhdar"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/guide-jabal-akhdar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/jabal-akhdar-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/guide-jabal-akhdar"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/muscat-things-to-do</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/muscat-things-to-do"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/que-faire-a-mascate"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/que-faire-a-mascate</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/muscat-things-to-do"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/que-faire-a-mascate"/>
+  </url>
 </urlset>
