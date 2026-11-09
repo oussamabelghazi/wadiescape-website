@@ -61,11 +61,12 @@
   <section class="section-tight">
     <div class="container" style="max-width:920px;">
       <div class="form-card">
-        <form name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-          <input type="hidden" name="form-name" value="quote-request" />
-          <p class="hidden-field">
-            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-          </p>
+        <form name="quote-request" method="POST" action="https://api.web3forms.com/submit">
+          <input type="hidden" name="access_key" value="9f862d77-b3e5-4f6f-89d4-498b51c2ecf1" />
+          <input type="hidden" name="subject" value="Nouvelle demande de devis - Wadi Escape (EN)" />
+          <input type="hidden" name="from_name" value="Wadi Escape - site web" />
+          <input type="hidden" name="redirect" value="https://wadiescape.com/thank-you.html" />
+          <p class="hidden-field"><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" /></p>
 
           <div class="form-grid">
             <div class="form-field">
