@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /thank-you
 Disallow: /thank-you.html
+Disallow: /fr/merci
 Disallow: /fr/merci.html
 
 Sitemap: https://wadiescape.com/sitemap.xml

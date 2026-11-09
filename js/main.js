@@ -19,11 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Mark current page in nav
-  var current = location.pathname.split("/").pop() || "index.html";
+  // Mark current page in nav (works with or without the .html extension)
+  var norm = function (p) {
+    return p.replace(/\/index(\.html)?$/, "/").replace(/\.html$/, "").replace(/(.)\/$/, "$1");
+  };
+  var currentPath = norm(location.pathname);
   document.querySelectorAll(".main-nav a").forEach(function (link) {
-    var href = link.getAttribute("href");
-    if (href === current || (current === "" && href === "index.html")) {
+    if (link.closest(".lang-switch")) return;
+    if (norm(link.pathname) === currentPath) {
       link.classList.add("active");
     }
   });
