@@ -39,6 +39,7 @@
       <a href="about.html">About</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
+      <span class="lang-switch" role="group" aria-label="Language"><a href="contact.html" hreflang="en" lang="en" title="English" aria-current="true">EN</a><a href="fr/contact.html" hreflang="fr" lang="fr" title="Français">FR</a></span>
       <a href="contact.html" class="btn btn-primary">Get a Quote</a>
     </nav>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -60,16 +61,6 @@
   <section class="section-tight">
     <div class="container" style="max-width:920px;">
       <div class="form-card">
-
-        <!--
-          FORM SERVICE: currently wired to Netlify Forms (zero-config if deployed on Netlify).
-          If deploying to Vercel instead, swap to Formspree:
-            1. Sign up at formspree.io, create a form, copy your endpoint (https://formspree.io/f/xxxxxxx)
-            2. Change the <form> tag below to:
-                 <form action="https://formspree.io/f/xxxxxxx" method="POST">
-            3. Remove: data-netlify="true", netlify-honeypot, name="form-name" hidden input,
-               and the hidden bot-field paragraph; those are Netlify-specific.
-        -->
         <form name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
           <input type="hidden" name="form-name" value="quote-request" />
           <p class="hidden-field">
