@@ -47,3 +47,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+// Contact forms: submit via fetch to Web3Forms, then go to the site's own thank-you page
+(function () {
+  document.querySelectorAll('form[data-redirect]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) btn.disabled = true;
+      fetch(form.action, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(form) })
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (d && d.success) { window.location.href = form.getAttribute('data-redirect'); }
+          else { throw new Error('failed'); }
+        })
+        .catch(function () {
+          if (btn) btn.disabled = false;
+          window.alert(form.getAttribute('data-error'));
+        });
+    });
+  });
+})();

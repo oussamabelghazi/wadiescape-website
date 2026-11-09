@@ -61,11 +61,10 @@
   <section class="section-tight">
     <div class="container" style="max-width:920px;">
       <div class="form-card">
-        <form name="quote-request" method="POST" action="https://api.web3forms.com/submit">
+        <form name="quote-request" method="POST" action="https://api.web3forms.com/submit" data-redirect="/thank-you" data-error="Sorry, something went wrong. Please try again or email us directly.">
           <input type="hidden" name="access_key" value="9f862d77-b3e5-4f6f-89d4-498b51c2ecf1" />
           <input type="hidden" name="subject" value="Nouvelle demande de devis - Wadi Escape (EN)" />
           <input type="hidden" name="from_name" value="Wadi Escape - site web" />
-          <input type="hidden" name="redirect" value="https://wadiescape.com/thank-you.html" />
           <p class="hidden-field"><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" /></p>
 
           <div class="form-grid">
