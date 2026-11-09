@@ -115,7 +115,7 @@ section { padding: 72px 0; }
 }
 .btn-light:hover { background: var(--white); }
 
-.btn-block { width: 100%; justify-content: center; }
+.btn-block { width: 100%; justify-content: center; text-align: center; white-space: normal; line-height: 1.25; }
 
 /* ---------- Header ---------- */
 .site-header {
@@ -782,3 +782,6 @@ video.ph-wide, video.ph-square, video.ph-portrait, video.ph-banner, video.ph-vid
   .main-nav .btn { padding-left: 14px; padding-right: 14px; font-size: 0.9rem; }
   .main-nav .lang-switch a:not(.btn) { padding: 6px 8px; }
 }
+
+/* Package cards: keep the call-to-action button pinned to the bottom so buttons align across a row */
+.pkg-card-body > .btn:last-child { margin-top: auto; }
