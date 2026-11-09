@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://wadiescape.com/</loc></url>
-  <url><loc>https://wadiescape.com/packages.html</loc></url>
-  <url><loc>https://wadiescape.com/activities.html</loc></url>
-  <url><loc>https://wadiescape.com/about.html</loc></url>
-  <url><loc>https://wadiescape.com/gallery.html</loc></url>
-  <url><loc>https://wadiescape.com/contact.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://wadiescape.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/packages.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/packages.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/circuits-oman.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/circuits-oman.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/packages.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/circuits-oman.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/activities.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/activities.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/activites-oman.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/activites-oman.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/activities.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/activites-oman.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/a-propos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/gallery.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/galerie.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/galerie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/galerie.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/contact.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/contact.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/oman-visa-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/oman-visa-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/visa-oman.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/visa-oman.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/oman-visa-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/visa-oman.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/wadi-shab-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/wadi-shab-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/guide-wadi-shab.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/guide-wadi-shab.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/wadi-shab-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/guide-wadi-shab.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/best-time-to-visit-oman.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/best-time-to-visit-oman.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/meilleure-periode-oman.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/meilleure-periode-oman.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/best-time-to-visit-oman.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/meilleure-periode-oman.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/how-many-days-in-oman.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/how-many-days-in-oman.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/combien-de-jours-oman.html"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/combien-de-jours-oman.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/how-many-days-in-oman.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/combien-de-jours-oman.html"/>
+  </url>
 </urlset>
