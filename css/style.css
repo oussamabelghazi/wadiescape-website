@@ -999,3 +999,43 @@ section[style*="cream-dark"] { background: linear-gradient(180deg, var(--sand) 0
   .brand img, .site-header.scrolled .brand img { height: 38px; }
   .main-nav a:not(.btn) { font-size: 0.8rem; }
 }
+
+/* ---- Round 2: logo proportions, tighter vertical rhythm, photo framing ---- */
+.brand { align-items: center; line-height: 1; }
+.brand img { width: auto; aspect-ratio: 566 / 316; }
+.brand span, .brand { display: flex; }
+@media (min-width: 1241px) {
+  .brand { font-size: 1.75rem; gap: 14px; }
+  .brand img, .site-header.scrolled .brand img { height: 52px; }
+  .site-header.scrolled .brand img { height: 44px; }
+}
+@media (min-width: 901px) and (max-width: 1240px) {
+  .brand { font-size: 1.3rem; gap: 10px; }
+  .brand img, .site-header.scrolled .brand img { height: 40px; }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  .brand { font-size: 1.1rem; gap: 8px; }
+  .brand img, .site-header.scrolled .brand img { height: 34px; }
+}
+@media (max-width: 900px) {
+  .brand { font-size: 1.4rem; }
+  .brand img, .site-header.scrolled .brand img { height: 40px; }
+}
+.footer-brand { align-items: center; }
+.footer-brand img { height: 40px; width: auto; aspect-ratio: 566 / 316; }
+
+section { padding: 52px 0; }
+.section-tight { padding: 34px 0; }
+.section-head { margin-bottom: 30px; }
+.section-head h2::after { margin-top: 10px; }
+.page-hero { padding: 44px 0 28px; }
+.mt-lg { margin-top: 32px; }
+.cta-final { padding: 56px 0; }
+.site-footer { padding: 44px 0 24px; }
+.footer-top { padding-bottom: 28px; }
+.hero { min-height: 74vh; }
+.pt-tight { padding-top: 12px; }
+
+/* Photo framing */
+img[src*="activity-nizwa-heritage"] { object-position: 62% 10%; }
+img[src*="activity-muscat-city"] { object-position: 50% 30%; }
