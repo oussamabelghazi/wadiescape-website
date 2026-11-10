@@ -824,3 +824,140 @@ video.ph-wide, video.ph-square, video.ph-portrait, video.ph-banner, video.ph-vid
   .main-nav .btn { padding-left: 12px; padding-right: 12px; font-size: 0.85rem; }
   .site-header .brand { font-size: 1.1rem; }
 }
+
+/* ============================================
+   Design punch-up (typography, outlines, motion, colour)
+   ============================================ */
+:root {
+  --teal-light: #1d6b6b;
+  --sand: #f1e4cb;
+  --gold-deep: #c58f2b;
+  --shadow-lift: 0 18px 40px rgba(15, 76, 76, 0.22);
+}
+
+/* Headings: heavier, tighter */
+h1, h2, h3 { letter-spacing: -0.015em; font-weight: 700; }
+h1 { font-size: clamp(2.4rem, 5.6vw, 4rem); line-height: 1.05; }
+h2 { font-size: clamp(1.8rem, 3.6vw, 2.7rem); }
+.hero-content h1 { text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35); }
+.hero-content p.lead { font-size: 1.25rem; }
+
+/* Eyebrows: framed by gold dashes */
+.eyebrow { display: inline-flex; align-items: center; gap: 12px; letter-spacing: 0.18em; }
+.eyebrow::before, .eyebrow::after { content: ""; width: 28px; height: 2px; background: var(--gold); border-radius: 2px; }
+.hero-content .eyebrow::after, .page-hero .eyebrow::after { display: inline-block; }
+.section-head h2::after {
+  content: ""; display: block; width: 64px; height: 4px; margin: 14px auto 0;
+  background: linear-gradient(90deg, var(--terracotta), var(--gold)); border-radius: 4px;
+}
+.band-teal h2::after { display: none; }
+
+/* Logo bigger, vertically centred, shrinks slightly on scroll */
+.site-header .container { height: 100px; transition: height 0.25s ease; }
+.site-header.scrolled .container { height: 76px; }
+.site-header.scrolled { box-shadow: 0 6px 24px rgba(15, 76, 76, 0.12); }
+.site-header { transition: box-shadow 0.25s ease; }
+.brand { font-size: 1.75rem; gap: 14px; letter-spacing: -0.02em; line-height: 1; }
+.brand img { height: 68px; width: auto; transition: height 0.25s ease, transform 0.3s ease; }
+.site-header.scrolled .brand img { height: 52px; }
+.brand:hover img { transform: rotate(-6deg) scale(1.05); }
+
+/* Nav: coloured hover and thicker underline */
+.main-nav a:not(.btn)::after { height: 3px; background: linear-gradient(90deg, var(--terracotta), var(--gold)); border-radius: 3px; }
+.main-nav a:not(.btn):hover { color: var(--terracotta); }
+
+/* Buttons: gradient, shine, lift */
+.btn { position: relative; overflow: hidden; letter-spacing: 0.01em; }
+.btn::after {
+  content: ""; position: absolute; top: 0; left: -80%; width: 50%; height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transform: skewX(-20deg); transition: left 0.6s ease;
+}
+.btn:hover::after { left: 130%; }
+.btn-primary { background: linear-gradient(135deg, #e8b54e 0%, var(--gold-deep) 100%); box-shadow: 0 10px 24px rgba(197, 143, 43, 0.45); }
+.btn-primary:hover { background: linear-gradient(135deg, #f0c062 0%, #d39a35 100%); box-shadow: 0 14px 30px rgba(197, 143, 43, 0.55); transform: translateY(-3px); }
+.btn-outline { border-width: 2px; }
+.btn-outline:hover { box-shadow: 0 10px 22px rgba(15, 76, 76, 0.25); }
+
+/* Cards: outline, lift, image zoom, accent bar */
+.card, .pkg-card, .activity-card, .guide-card, .testimonial-card {
+  border: 1px solid rgba(15, 76, 76, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.card:hover, .pkg-card:hover, .activity-card:hover, .guide-card:hover, .testimonial-card:hover {
+  transform: translateY(-8px); box-shadow: var(--shadow-lift); border-color: rgba(217, 164, 65, 0.7);
+}
+.card img, .pkg-card img, .activity-card img { transition: transform 0.6s ease; }
+.card:hover img, .pkg-card:hover img, .activity-card:hover img { transform: scale(1.06); }
+.card, .pkg-card, .activity-card { overflow: hidden; }
+.card img, .pkg-card img, .activity-card img { border-radius: 0; }
+.card-tag { background: linear-gradient(135deg, #fbe9d0, #f7d9b3); color: var(--terracotta); }
+.card-link, .guide-more { transition: gap 0.2s ease, color 0.2s ease; }
+.card:hover .card-link, .guide-card:hover .guide-more { gap: 12px; color: var(--terracotta); }
+.guide-card { border-top: 4px solid var(--terracotta); }
+.guide-card:nth-child(even) { border-top-color: var(--gold); }
+
+.why-icon { width: 68px; height: 68px; background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%); box-shadow: 0 10px 22px rgba(15, 76, 76, 0.3), 0 0 0 5px rgba(217, 164, 65, 0.25); transition: transform 0.3s ease; }
+.why-item:hover .why-icon { transform: scale(1.1) rotate(-6deg); }
+.testimonial-card { border-top: 4px solid var(--gold); }
+.testimonial-stars { font-size: 1.25rem; }
+
+/* Section rhythm: alternating sand with a soft gradient */
+section[style*="cream-dark"] { background: linear-gradient(180deg, var(--sand) 0%, #ecdcc0 100%) !important; }
+.page-hero { background: radial-gradient(circle at 80% 0%, rgba(217, 164, 65, 0.22), transparent 55%), linear-gradient(180deg, var(--sand) 0%, var(--cream) 100%); }
+
+/* Teal bands: gradient with gold glow */
+.band-teal {
+  background: radial-gradient(circle at 15% 10%, rgba(217, 164, 65, 0.22), transparent 45%), linear-gradient(135deg, var(--teal) 0%, #0b3a3a 100%);
+}
+
+/* Footer */
+.site-footer { background: linear-gradient(180deg, #0c3d3d 0%, #072727 100%); border-top: 4px solid var(--gold); }
+.footer-brand img { height: 48px; }
+.footer-brand span { font-size: 1.4rem; }
+.footer-col a { transition: color 0.2s ease; }
+
+/* Contact pills (WhatsApp, e-mail) */
+.contact-pill, .contact-direct a.contact-pill {
+  display: inline-flex; align-items: center; gap: 10px; align-self: flex-start;
+  padding: 10px 18px; border-radius: 999px; font-weight: 600; font-size: 0.95rem;
+  color: #fff; transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.contact-pill svg { flex: none; }
+.contact-pill:hover, .contact-direct a.contact-pill:hover { transform: translateY(-3px); color: #fff; }
+.contact-pill.wa { background: linear-gradient(135deg, #25d366, #128c7e); box-shadow: 0 8px 18px rgba(37, 211, 102, 0.35); }
+.contact-pill.wa:hover { box-shadow: 0 12px 24px rgba(37, 211, 102, 0.5); }
+.contact-pill.mail { background: linear-gradient(135deg, #e8b54e, var(--gold-deep)); color: var(--teal-dark); box-shadow: 0 8px 18px rgba(217, 164, 65, 0.35); }
+.contact-pill.mail:hover, .contact-direct a.contact-pill.mail:hover { color: var(--teal-dark); box-shadow: 0 12px 24px rgba(217, 164, 65, 0.5); }
+.contact-pill.tel { background: var(--teal); box-shadow: 0 8px 18px rgba(15, 76, 76, 0.3); }
+.footer-col p { margin-bottom: 12px; }
+
+/* Social icons: brand colours */
+.footer-social { gap: 12px; margin-top: 18px; }
+.footer-social a { width: 44px; height: 44px; color: #fff; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.footer-social a svg { width: 20px; height: 20px; }
+.footer-social a[aria-label="Instagram"] { background: linear-gradient(45deg, #f9a03c 0%, #e1306c 55%, #833ab4 100%); }
+.footer-social a[aria-label="TikTok"] { background: #111; box-shadow: inset 2px 2px 0 #25f4ee, inset -2px -2px 0 #fe2c55; }
+.footer-social a[aria-label="Facebook"] { background: #1877f2; }
+.footer-social a[aria-label="LinkedIn"] { background: #0a66c2; }
+.footer-social a:hover { transform: translateY(-4px) scale(1.08); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35); color: #fff; }
+.footer-social a[aria-label="TikTok"]:hover { box-shadow: inset 2px 2px 0 #25f4ee, inset -2px -2px 0 #fe2c55, 0 10px 20px rgba(0, 0, 0, 0.35); }
+
+/* Scroll reveal (only when JS is on) */
+.js-reveal .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.js-reveal .reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal .reveal { opacity: 1; transform: none; transition: none; }
+  .btn::after { display: none; }
+}
+
+@media (max-width: 900px) {
+  .site-header .container, .site-header.scrolled .container { height: 84px; }
+  .brand { font-size: 1.45rem; }
+  .brand img, .site-header.scrolled .brand img { height: 54px; }
+}
+@media (min-width: 901px) and (max-width: 1240px) {
+  .brand { font-size: 1.4rem; gap: 10px; }
+  .brand img, .site-header.scrolled .brand img { height: 54px; }
+}
+.site-header .container { max-width: 1340px; }

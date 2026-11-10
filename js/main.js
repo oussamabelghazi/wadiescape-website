@@ -71,3 +71,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 })();
+
+// Visual polish: header shrinks on scroll, sections fade in
+document.addEventListener("DOMContentLoaded", function () {
+  var header = document.querySelector(".site-header");
+  if (header) {
+    var onScroll = function () { header.classList.toggle("scrolled", window.scrollY > 24); };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
+  if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var targets = document.querySelectorAll(
+    ".section-head, .pkg-card, .card, .activity-card, .guide-card, .testimonial-card, .why-item, .founder-card, .value-item, .gallery-grid > *, .faq-item"
+  );
+  if (!targets.length) return;
+  document.documentElement.classList.add("js-reveal");
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  targets.forEach(function (el, i) {
+    el.classList.add("reveal");
+    el.style.transitionDelay = (i % 4) * 80 + "ms";
+    io.observe(el);
+  });
+  // Safety net: never leave content hidden
+  setTimeout(function () { targets.forEach(function (el) { el.classList.add("in"); }); }, 4000);
+});
