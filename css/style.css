@@ -843,3 +843,6 @@ video.ph-wide, video.ph-square, video.ph-portrait, video.ph-banner, video.ph-vid
   .brand img { height: 34px; }
   .main-nav .lang-switch a:not(.btn) { padding: 5px 6px; }
 }
+
+/* Fix: card photos must keep their aspect ratio (height:100% stretched them over the card text on desktop) */
+.card img, .pkg-card img, .activity-card img { height: auto; }
