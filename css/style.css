@@ -1041,3 +1041,5 @@ img[src*="activity-nizwa-heritage"] { object-position: 62% 10%; }
 img[src*="activity-muscat-city"] { object-position: 50% 30%; }
 /* Fix: card photos must keep their aspect ratio (height:100% stretched them over the card text on desktop) */
 .card img, .pkg-card img, .activity-card img { height: auto; }
+.activity-grid .activity-card img.ph-square { aspect-ratio: 4 / 3; }
+.activity-grid .activity-card img[src*="activity-nizwa-heritage"] { object-position: 62% 6%; }
