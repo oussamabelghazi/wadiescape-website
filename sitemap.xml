@@ -142,4 +142,52 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/guides-oman"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wadiescape.com/guides"/>
   </url>
+  <url>
+    <loc>https://wadiescape.com/muscat-escape-4-days</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/muscat-escape-4-days"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/escapade-mascate-4-jours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wadiescape.com/muscat-escape-4-days"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/escapade-mascate-4-jours</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/muscat-escape-4-days"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/escapade-mascate-4-jours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wadiescape.com/muscat-escape-4-days"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/oman-coast-explorer-6-days</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/oman-coast-explorer-6-days"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/oman-cote-6-jours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wadiescape.com/oman-coast-explorer-6-days"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/oman-cote-6-jours</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/oman-coast-explorer-6-days"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/oman-cote-6-jours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wadiescape.com/oman-coast-explorer-6-days"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/desert-mountains-oman-8-days</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/desert-mountains-oman-8-days"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/desert-montagnes-oman-8-jours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wadiescape.com/desert-mountains-oman-8-days"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/desert-montagnes-oman-8-jours</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/desert-mountains-oman-8-days"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/desert-montagnes-oman-8-jours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wadiescape.com/desert-mountains-oman-8-days"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/ultimate-oman-11-days</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/ultimate-oman-11-days"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/oman-complet-11-jours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wadiescape.com/ultimate-oman-11-days"/>
+  </url>
+  <url>
+    <loc>https://wadiescape.com/fr/oman-complet-11-jours</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wadiescape.com/ultimate-oman-11-days"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wadiescape.com/fr/oman-complet-11-jours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wadiescape.com/ultimate-oman-11-days"/>
+  </url>
 </urlset>

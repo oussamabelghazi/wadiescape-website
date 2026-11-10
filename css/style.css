@@ -1,3 +1,7 @@
+/* Self-hosted fonts (Fraunces for headings, Inter for text) */
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("../assets/fonts/fraunces-latin-wght-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("../assets/fonts/inter-latin-wght-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 /* ============================================
    Wadi Escape: base styles
    Brand: teal #0F4C4C · gold #D9A441 · terracotta #B5542B · cream #F6EFE3
@@ -1043,3 +1047,22 @@ img[src*="activity-muscat-city"] { object-position: 50% 30%; }
 .card img, .pkg-card img, .activity-card img { height: auto; }
 .activity-grid .activity-card img.ph-square { aspect-ratio: 4 / 3; }
 .activity-grid .activity-card img[src*="activity-nizwa-heritage"] { object-position: 62% 6%; }
+
+/* Floating WhatsApp button */
+.wa-float {
+  position: fixed; right: 20px; bottom: 20px; z-index: 90;
+  width: 58px; height: 58px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; background: linear-gradient(135deg, #25d366, #128c7e);
+  box-shadow: 0 10px 24px rgba(18, 140, 126, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.wa-float { animation: wa-pulse 2.6s ease-out infinite; }
+.wa-float:hover { transform: scale(1.08); box-shadow: 0 14px 30px rgba(18, 140, 126, 0.6); color: #fff; }
+@keyframes wa-pulse { 0% { box-shadow: 0 10px 24px rgba(18,140,126,0.45), 0 0 0 0 rgba(37,211,102,0.55); } 70%, 100% { box-shadow: 0 10px 24px rgba(18,140,126,0.45), 0 0 0 20px rgba(37,211,102,0); } }
+@media (prefers-reduced-motion: reduce) { .wa-float { animation: none; } }
+@media (max-width: 520px) { .wa-float { right: 14px; bottom: 14px; width: 54px; height: 54px; } }
+
+/* Article pages (guides, itineraries): calmer section headings */
+main .container[style*="max-width:760px"] > h2 { font-size: clamp(1.45rem, 2.4vw, 1.8rem); margin-top: 1.5em; }
+main .container[style*="max-width:760px"] > h2::after { display: none; }

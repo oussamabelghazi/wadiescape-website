@@ -11,6 +11,7 @@
 <link rel="alternate" hreflang="x-default" href="https://wadiescape.com/packages">
 <meta name="theme-color" content="#0F4C4C">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Wadi Escape">
 <meta property="og:title" content="Oman Tour Packages &amp; Itineraries | Wadi Escape">
 <meta property="og:description" content="Four signature Oman itineraries covering Muscat, the coast, desert and mountains, or the whole country. Every Oman tour package is adjustable and tailor-made.">
@@ -19,9 +20,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="assets/wadi-escape-icon.svg">
 <link rel="apple-touch-icon" href="assets/wadi-escape-icon-1024.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -104,7 +104,7 @@
       <div class="card-grid card-grid-auto">
 
         <div class="pkg-card" id="muscat-escape">
-          <img src="assets/images/package-muscat-escape.jpg" alt="Sultan Qaboos Grand Mosque in Muscat">
+          <img src="assets/images/package-muscat-escape.webp" alt="Sultan Qaboos Grand Mosque in Muscat">
           <div class="pkg-card-body">
             <h3>Muscat Escape</h3>
             <p style="font-weight:600;color:var(--terracotta);">4 Days / 3 Nights</p>
@@ -116,12 +116,13 @@
             </ul>
             <p class="pkg-hotel"><span class="pkg-hotel-label">Where you'll stay</span>Grand Hyatt Muscat (5★, Shatti Al Qurum)</p>
             <p class="pkg-price">From $1,450<span class="pkg-price-sub">per person, twin-share, land only</span></p>
+            <a href="muscat-escape-4-days" class="card-link" style="margin:2px 0 10px;">See the day-by-day itinerary →</a>
             <a href="contact?package=muscat-escape" class="btn btn-outline btn-block">Request a Custom Quote</a>
           </div>
         </div>
 
         <div class="pkg-card pkg-silver" id="coast-explorer">
-          <img src="assets/images/package-coast-explorer.jpg" alt="Traditional dhow boat sailing along Oman's mountainous coastline">
+          <img src="assets/images/package-coast-explorer.webp" alt="Traditional dhow boat sailing along Oman's mountainous coastline">
           <div class="pkg-card-body">
             <h3>Oman Coast Explorer</h3>
             <p style="font-weight:600;color:var(--terracotta);">6 Days / 5 Nights</p>
@@ -134,12 +135,13 @@
             </ul>
             <p class="pkg-hotel"><span class="pkg-hotel-label">Where you'll stay</span>Kempinski Hotel Muscat + Sifawy Boutique Hotel (Sur coast)</p>
             <p class="pkg-price">From $2,200<span class="pkg-price-sub">per person, twin-share, land only</span></p>
+            <a href="oman-coast-explorer-6-days" class="card-link" style="margin:2px 0 10px;">See the day-by-day itinerary →</a>
             <a href="contact?package=coast-explorer" class="btn btn-outline btn-block">Request a Custom Quote</a>
           </div>
         </div>
 
         <div class="pkg-card pkg-gold" id="desert-mountains">
-          <img src="assets/images/package-desert-mountains.jpg" alt="Dramatic mountain canyon in Oman's interior">
+          <img src="assets/images/package-desert-mountains.webp" alt="Dramatic mountain canyon in Oman's interior">
           <div class="pkg-card-body">
             <h3>Desert &amp; Mountains Adventure</h3>
             <p style="font-weight:600;color:var(--terracotta);">8 Days / 7 Nights</p>
@@ -152,12 +154,13 @@
             </ul>
             <p class="pkg-hotel"><span class="pkg-hotel-label">Where you'll stay</span>Kempinski Hotel Muscat + Golden Tulip Nizwa + Alila Jabal Akhdar + Desert Nights Camp</p>
             <p class="pkg-price">From $3,100<span class="pkg-price-sub">per person, twin-share, land only</span></p>
+            <a href="desert-mountains-oman-8-days" class="card-link" style="margin:2px 0 10px;">See the day-by-day itinerary →</a>
             <a href="contact?package=desert-mountains" class="btn btn-outline btn-block">Request a Custom Quote</a>
           </div>
         </div>
 
         <div class="pkg-card" id="ultimate-oman">
-          <img src="assets/images/package-ultimate-oman.jpg" alt="Camping under a star-filled desert sky in Oman">
+          <img src="assets/images/package-ultimate-oman.webp" alt="Camping under a star-filled desert sky in Oman">
           <div class="pkg-card-body">
             <h3>Ultimate Oman Experience</h3>
             <p style="font-weight:600;color:var(--terracotta);">11 Days / 10 Nights</p>
@@ -170,6 +173,7 @@
             </ul>
             <p class="pkg-hotel"><span class="pkg-hotel-label">Where you'll stay</span>Al Bustan Palace, a Ritz-Carlton Hotel + Golden Tulip Nizwa + Alila Jabal Akhdar + Desert Nights Camp + Sifawy Boutique Hotel</p>
             <p class="pkg-price">From $4,800<span class="pkg-price-sub">per person, twin-share, land only</span></p>
+            <a href="ultimate-oman-11-days" class="card-link" style="margin:2px 0 10px;">See the day-by-day itinerary →</a>
             <a href="contact?package=ultimate-oman" class="btn btn-outline btn-block">Request a Custom Quote</a>
           </div>
         </div>
@@ -325,6 +329,8 @@
     </div>
   </div>
 </footer>
+
+<a class="wa-float" href="https://wa.me/96891205526?text=Hello%20Wadi%20Escape%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Oman." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-4.9A9 9 0 1 1 8.1 19.4L3 21z"/><path d="M9.2 8.2c.2 2.5 3.6 5.8 6.3 6.1l1.1-1.3-2.1-1-.9.7c-.9-.4-2-1.5-2.4-2.4l.7-.9-1-2.1-1.7.9z" fill="currentColor" stroke="none"/></svg></a>
 
 <script src="js/main.js"></script>
 </body>
