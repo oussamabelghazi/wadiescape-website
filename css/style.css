@@ -756,7 +756,9 @@ video.ph-wide, video.ph-square, video.ph-portrait, video.ph-banner, video.ph-vid
   line-height: 1;
 }
 .main-nav .lang-switch a:not(.btn) {
-  padding: 6px 11px;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
   border-radius: 999px;
   color: var(--teal);
   letter-spacing: 0.04em;
@@ -785,3 +787,13 @@ video.ph-wide, video.ph-square, video.ph-portrait, video.ph-banner, video.ph-vid
 
 /* Package cards: keep the call-to-action button pinned to the bottom so buttons align across a row */
 .pkg-card-body > .btn:last-child { margin-top: auto; }
+
+/* Language switch: flags */
+.lang-switch .flag { display: block; width: 22px; height: 15px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(15, 76, 76, 0.2); }
+.main-nav .lang-switch a:not(.btn):not([aria-current="true"]) .flag { opacity: 0.8; }
+.main-nav .lang-switch a:not(.btn):hover .flag { opacity: 1; }
+.main-nav .lang-switch a[aria-current="true"] .flag { box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.9); }
+
+/* Guide links inside activity cards: visible and clearly clickable */
+.activity-card .card-body p a { color: var(--teal); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.activity-card .card-body p a:hover { text-decoration-thickness: 2px; }
