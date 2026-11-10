@@ -797,3 +797,7 @@ video.ph-wide, video.ph-square, video.ph-portrait, video.ph-banner, video.ph-vid
 /* Guide links inside activity cards: visible and clearly clickable */
 .activity-card .card-body p a { color: var(--teal); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .activity-card .card-body p a:hover { text-decoration-thickness: 2px; }
+
+/* Room for the Guides link in the header */
+.site-header .brand { flex-shrink: 0; white-space: nowrap; }
+@media (min-width: 1141px) { .main-nav { gap: 26px; } }
