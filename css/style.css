@@ -825,8 +825,7 @@ video.ph-wide, video.ph-square, video.ph-portrait, video.ph-banner, video.ph-vid
   .site-header .brand { font-size: 1.1rem; }
 }
 
-/* ============================================
-   Design punch-up (typography, outlines, motion, colour)
+/* =====================================   Design punch-up (typography, outlines, motion, colour)
    ============================================ */
 :root {
   --teal-light: #1d6b6b;
@@ -961,3 +960,42 @@ section[style*="cream-dark"] { background: linear-gradient(180deg, var(--sand) 0
   .brand img, .site-header.scrolled .brand img { height: 54px; }
 }
 .site-header .container { max-width: 1340px; }
+=======
+/* Header safety: never let the menu collide with the logo (long FR labels, wider fonts) */
+.site-header .container { gap: 20px; }
+.main-nav { flex: 0 1 auto; min-width: 0; }
+@media (min-width: 901px) {
+  .main-nav { gap: clamp(10px, 1.1vw, 18px); }
+  .main-nav a:not(.btn) { font-size: 0.9rem; }
+  .main-nav .btn { padding: 12px 20px; font-size: 0.92rem; }
+  .brand { font-size: 1.2rem; }
+  .brand img { height: 40px; }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  .main-nav { gap: 8px; }
+  .main-nav a:not(.btn) { font-size: 0.82rem; }
+  .main-nav .btn { padding: 10px 14px; font-size: 0.85rem; }
+  .brand { font-size: 1.05rem; gap: 8px; }
+  .brand img { height: 34px; }
+  .main-nav .lang-switch a:not(.btn) { padding: 5px 6px; }
+}
+
+/* Final header sizing: bigger logo, but always room for the menu */
+.site-header .container { max-width: 1340px; }
+@media (min-width: 1241px) {
+  .brand { font-size: 1.6rem; gap: 12px; }
+  .brand img, .site-header.scrolled .brand img { height: 62px; }
+  .site-header.scrolled .brand img { height: 50px; }
+  .main-nav { gap: clamp(10px, 1.1vw, 20px); }
+}
+@media (min-width: 901px) and (max-width: 1240px) {
+  .brand { font-size: 1.2rem; gap: 9px; }
+  .brand img, .site-header.scrolled .brand img { height: 46px; }
+  .main-nav { gap: clamp(8px, 1vw, 14px); }
+  .main-nav a:not(.btn) { font-size: 0.86rem; }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  .brand { font-size: 1.05rem; }
+  .brand img, .site-header.scrolled .brand img { height: 38px; }
+  .main-nav a:not(.btn) { font-size: 0.8rem; }
+}
