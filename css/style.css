@@ -1066,3 +1066,21 @@ img[src*="activity-muscat-city"] { object-position: 50% 30%; }
 /* Article pages (guides, itineraries): calmer section headings */
 main .container[style*="max-width:760px"] > h2 { font-size: clamp(1.45rem, 2.4vw, 1.8rem); margin-top: 1.5em; }
 main .container[style*="max-width:760px"] > h2::after { display: none; }
+
+/* Package cards: align photo, title, list, hotel, price and buttons across the row */
+@supports (grid-template-rows: subgrid) {
+  .pkg-align { row-gap: 0; }
+  .pkg-align > .pkg-card { grid-row: span 9; margin-bottom: 28px; }
+  .pkg-align > .pkg-card:not(.pkg-custom) { display: grid; grid-template-rows: subgrid; grid-template-columns: minmax(0, 1fr); }
+  .pkg-align > .pkg-card:not(.pkg-custom) > .pkg-card-body {
+    grid-row: 2 / span 8; display: grid; grid-template-rows: subgrid; grid-template-columns: minmax(0, 1fr); gap: 0;
+  }
+  .pkg-align .pkg-card-body > * { margin: 0 0 14px; }
+  .pkg-align .pkg-card-body > .btn:last-child { margin-top: 0; align-self: end; }
+  .pkg-align .pkg-card-body > .card-link { align-self: end; }
+  .pkg-align .pkg-price { font-size: clamp(1.1rem, 1.45vw, 1.35rem); }
+}
+/* Custom card: button pinned to the bottom of the card */
+.pkg-align > .pkg-card.pkg-custom { display: flex; flex-direction: column; }
+.pkg-align > .pkg-card.pkg-custom > .pkg-card-body { flex: 1; display: flex; flex-direction: column; }
+.pkg-align > .pkg-card.pkg-custom .pkg-card-body > .btn { margin-top: auto; }
